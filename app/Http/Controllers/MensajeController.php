@@ -50,7 +50,7 @@ class MensajeController extends Controller
 
     function enviarMensaje($nombre, $numero) {
         $url = 'https://graph.facebook.com/v19.0/180085471850565/messages';
-        $token = 'EAAJIUtYrZCy0BO89a9TndaiAdGeMY8I8ZCyZCXb7fGPcuxPdqLlqJYh7oFNNk5xBrtAi9NZAuUV5QLgtO4DlSIr9q9qqFXwz1DkzwbclCYhqPpCZCeFWHXZANnM9hQrWv7ZBxxBBsk5ehasb5lkbAePQRPHsM17hV8oZBAYyOMMrRkZCZCZCdudUZAkVXUorzhN9pJAF7aDQL3TPsZAsvZAyL8wXFY';
+        $token = 'EAAJIUtYrZCy0BO9ZAMwioOlK9ZCqRYEV4J5fsBiaPlyY9CpwnpcGeqyQ9bZCrLGjtsg9XMPwkE3eVmlUfOYbRriEIttzAZBV1JxtDfgqIaqaAtG9vFJ3UX9GCArpWB3UXU4FVHMwEdNoA6o1hdWGJicxp1nmboMOC9RNDEv0GdM82FpYZAHZASwfZAvABrs3aPodOZASLpUlaDyVgcRuMhpgZD';
     
         $data = array(
             "messaging_product" => "whatsapp",
@@ -58,21 +58,11 @@ class MensajeController extends Controller
             "to" => $numero,
             "type" => "template",
             "template" => array(
-                "name" => "pruebas_envios",
+                "name" => "avancesportto",
                 "language" => array(
                     "code" => "en_US"
-                ),
-                "components" => array(
-                    array(
-                        "type" => "body",
-                        "parameters" => array(
-                            array(
-                                "type" => "text",
-                                "text" => $nombre
-                            )
-                        )
-                    )
                 )
+                
             )
         );
     

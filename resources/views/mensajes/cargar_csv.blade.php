@@ -8,6 +8,7 @@
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Carga tu Archivo CSV con la Imformacion de los clientes</h5>
             </a>
             <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Recuera que solo tienes que Copiar tus registros desde tu Archivo Excel a la Plantilla que nosotros te damos, <br>Cada Plantilla es Diferente para el tipo de Mensajes que Utilizas <br></p>
+            // ruta del Archivo cargado
             <a href="{{asset('file/plantilla_envios_1.csv')}}" download="" class="inline-flex font-medium items-center text-blue-600 hover:underline ">
                 Descargar Plantilla
                 <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
@@ -15,6 +16,7 @@
                 </svg>
             </a>
             <hr class="my-5">
+            //Ruta para el controller
             <form action="{{ route('mensaje.enviar') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
